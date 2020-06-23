@@ -17,7 +17,7 @@ For run with docker, execute:
 ```
 API wan running on port 8080:
 
-> http://localhost:8080/api/
+> http://localhost:8080/
 
 ## API Specs
 
