@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  starwars-api:
+    build: .
+    depends_on:
+      - starwars-db
+    network_mode: "host"
+  starwars-db:
+    build: cassandra/.
+    ports:
+      - "9042:9042"
+    volumes:
+      - ./cassandra/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d

@@ -1,0 +1,15 @@
+custom:
+  swapi:
+    url:
+      base: https://swapi.dev/api/
+      planet:
+        page: https://swapi.dev/api/planets/?page=%d
+        search: https://swapi.dev/api/planets/?search=%s&page=%d
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: john_williams
+      port: 9042
+      schema-action: create_if_not_exists
+      contact-points: something
